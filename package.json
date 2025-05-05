@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "NODE_ENV=development next dev",
+    "dev": "cross-env NEXT_TELEMETRY_DISABLED=1 NODE_ENV=development next dev",
     "build": "NODE_ENV=production next build",
     "start": "NODE_ENV=production next start",
     "lint": "next lint"
@@ -13,6 +13,7 @@
     "@emailjs/browser": "^4.3.1",
     "@next/third-parties": "15.1.1",
     "axios": "^1.6.8",
+    "cross-env": "^7.0.3",
     "lottie-react": "^2.4.1",
     "next": "15.1.1",
     "nodemailer": "^6.9.15",
